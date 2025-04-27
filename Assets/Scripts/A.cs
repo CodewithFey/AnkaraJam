@@ -34,11 +34,11 @@ public class A : MonoBehaviour
         // Fiziksel hareketi uygula
         if (speed > 0f)
         {
-            r2d.velocity = new Vector2(hareketHizi, r2d.velocity.y);
+            r2d.linearVelocity = new Vector2(hareketHizi, r2d.linearVelocity.y);
         }
         else
         {
-            r2d.velocity = new Vector2(0f, r2d.velocity.y);
+            r2d.linearVelocity = new Vector2(0f, r2d.linearVelocity.y);
         }
     }
 }
